@@ -294,7 +294,6 @@ footer {
 }
 
 /* nav1_tickets css */
-
 .tickets-label {
   padding-top: 20vh;
 }
@@ -485,6 +484,16 @@ footer {
   flex-direction: row;
 }
 
+.subtotal-value {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #242424;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+}
+
 .tp-wrap input {
   width: 100%;
   border: solid 1px #242424;
@@ -576,6 +585,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  font-weight: bold;
 }
 
 .ordered-item {
@@ -584,6 +594,7 @@ footer {
   gap: 0.8rem;
   padding-bottom: 1rem;
   border-bottom: solid 1px #bfbfbf;
+  margin: 1rem 0;
 }
 
 .item-title {
@@ -628,6 +639,43 @@ footer {
   text-align: center;
   padding: 1.5rem 0;
   border-radius: 5px;
+}
+
+.billing-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.attendee-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+}
+
+.attendee-form h3 {
+  grid-column: span 2;
+  background-color: var(--c-primary);
+  padding: 1rem;
+  color: white;
+}
+
+.attendee-form .form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.attendee-form input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px #242424;
+  outline: none;
+  padding: 1rem;
 }
 
 /* Nav3 css */
@@ -825,6 +873,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nf-wrapper {
     grid-template-columns: 1fr;
   }
