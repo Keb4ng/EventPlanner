@@ -643,21 +643,21 @@ footer {
 
 .billing-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin: 2rem 0;
 }
 
 .attendee-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   background: white;
   padding: 1rem;
 }
 
 .attendee-form h3 {
-  grid-column: span 2;
+  grid-column: span 4;
   background-color: var(--c-primary);
   padding: 1rem;
   color: white;
@@ -852,6 +852,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .attendee-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .attendee-form h3 {
+    grid-column: span 2;
+  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -881,5 +887,12 @@ footer {
   .nav-title p {
     font-size: 1.5rem;
     line-height: unset;
+  }
+
+  .attendee-form {
+    grid-template-columns: 1fr;
+  }
+  .attendee-form h3 {
+    grid-column: span 1;
   }
 }
